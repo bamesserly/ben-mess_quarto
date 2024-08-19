@@ -1,0 +1,21 @@
+---
+title: "About"
+toc: true
+toc-location: left
+preview: images/minerva.jpg
+lightbox: true
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r setup}
+source("_common.R")
+```
+
+### Particle Physics Research
+
+I develop and build particle detectors, writing software to analyze intricate
+images of subatomic collisions -- all with the purpose of understanding what
+the universe is made of.

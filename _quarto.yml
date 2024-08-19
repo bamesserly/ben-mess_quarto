@@ -1,0 +1,88 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 3000
+    browser: true
+  render:
+    - "index.qmd"
+    - "about.qmd"
+    #- "lab.qmd"
+    #- "cv.qmd"
+    #- "research.qmd"
+    #- "projects.qmd"
+    #- "teaching.qmd"
+    #- "talks/index.qmd"
+    #- "talks/**/*.qmd"
+    #- "blog/index.qmd"
+    #- "blog/**/*.qmd"
+    #- "research/**/*.qmd"
+    #- "charts.qmd"
+    #- "404.qmd"
+    #- "da-faq.qmd"
+    #- "!research/template.qmd"
+  resources:
+    - "content/"
+    - "css"
+    - "static/"
+
+website:
+  title: "benmesserly.com"
+  description: "The personal website of Ben Messerly"
+  image: images/messerly_profile.png
+  site-url: https://www.benmesserly.com
+  favicon: images/favicon/favicon.svg
+  #repo-url: https://github.com/bamesserly/benmesserly_quarto
+  search:
+    location: navbar
+    type: overlay
+  back-to-top-navigation: true
+  #google-analytics: "G-HQNG5WQE3X"
+  open-graph:
+    locale: es_ES
+    site-name: https://benmesserly.com
+  navbar:
+    right:
+      - text: "About"
+        href: about.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Projects"
+        href: projects.qmd
+      #- text: "Talks"
+      #  href: talks/index.qmd
+      #- text: "Blog"
+      #  href: blog/index.qmd
+      - icon: list
+        menu:
+          #- text: "CV"
+          #  href: cv.qmd
+          - icon: github
+            href: https://github.com/bamesserly
+            aria-label: GitHub
+            target: blank
+          - icon: linkedin
+            href: https://www.linkedin.com/in/ben-messerly/
+            target: blank
+          - text: "<i class='ai ai-orcid fa-lg'></i>"
+            href: https://orcid.org/0000-0002-1388-8737
+            target: blank
+          #- icon: rss-fill
+          #  href: blog.xml
+          #  target: blank
+  page-footer:
+    center:
+      - text: "© 2024 Ben Messerly<br>Site made with <a href='https://quarto.org/' target='_blank'><img src='https://quarto.org/favicon.png' width=12> quarto</a> and inspired by <a href='https://www.jhelvy.com/' target='_blank'>jhelvy</a>"
+
+format:
+  html:
+    theme: [default, css/theme.scss]
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false
+    # This is to include fontawesome and academic icons in the headers:
+    include-in-header: "_includes/header.html"
+    

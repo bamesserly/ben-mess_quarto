@@ -1,0 +1,35 @@
+---
+title: "Ben Messerly"
+image: "images/messerly_profile.png"
+execute: 
+  echo: false
+  message: false
+  warning: false
+about:
+  template: trestles
+  links:
+    - icon: linkedin
+      href: https://www.linkedin.com/in/ben-messerly/
+    - icon: github
+      href: https://github.com/bamesserly
+    - text: '<i class="ai ai-orcid fa-lg"></i>'
+      href: https://orcid.org/0000-0002-1388-8737
+---
+
+```{r setup}
+source("_common.R")
+```
+
+### Welcome to my personal website!
+
+My research is in high energy particle physics with focuses on both detector
+construction and data analysis.
+
+Some of my recent work includes building the electron tracking detector for the
+Mu2e experiment, designing and building a systematics software toolkit for
+general particle physics analyses, and measuring neutrino interactions at
+Fermilab.
+
+I'm interested undergraduate physics education, and I was recently a visiting
+professor at [St. Olaf](https://wp.stolaf.edu/physics/) and
+[Carleton](https://www.carleton.edu/physics-astronomy/).
