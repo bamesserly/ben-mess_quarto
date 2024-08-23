@@ -1,0 +1,25 @@
+[build]
+  publish = "_site"
+  command = "quarto render"
+
+[build.environment]
+  NODE_VERSION = "16"
+
+[build.lifecycle]
+  [build.lifecycle.onBuild]
+    commands = [
+      "wget -qO- https://quarto.org/docs/download-code/linux | bash",
+      "curl -O https://cdn.rstudio.com/r/ubuntu-2004/pkgs/r-4.2.0_1_amd64.deb",
+      "sudo gdebi -n r-4.2.0_1_amd64.deb",
+      "Rscript -e 'install.packages(c(\"stringr\", " \
+                                 "\"dplyr\", " \
+                                 "\"quarto\", " \
+                                 "\"r-base\", " \
+                                 "\"r-knitr\", " \
+                                 "\"r-rmarkdown\", " \
+                                 "\"r-stringr\", " \
+                                 "\"r-dplyr\", " \
+                                 "\"r-readr\"), " \
+                    "repos=\"https://cloud.r-project.org/\")'",
+      "quarto render"
+    ]
