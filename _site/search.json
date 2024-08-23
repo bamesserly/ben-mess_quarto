@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Particle Physics Research\nI develop and build particle detectors, writing software to analyze intricate images of subatomic collisions – all with the purpose of understanding what the universe is made of.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ben Messerly",
+    "section": "",
+    "text": "Welcome to my personal website!\nMy research is in high energy particle physics with focuses on both detector construction and data analysis.\nSome of my recent work includes building the electron tracking detector for the Mu2e experiment, designing and building a systematics software toolkit for general particle physics analyses, and measuring neutrino interactions at Fermilab.\nI’m interested undergraduate physics education, and I was recently a visiting professor at St. Olaf and Carleton.\n\n\n\n Back to top"
+  }
+]
