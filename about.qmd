@@ -14,8 +14,141 @@ execute:
 source("_common.R")
 ```
 
-### Particle Physics Research
+I'm an experimental nuclear and particle physicist at the University of
+Minnesota. I research neutrinos and muons on [Fermilab](https://www.fnal.gov/)
+experiments that test the Standard Model of particle physics. I have expertise in
+particle beams and detectors, high-performance computing, and data science. I
+also do work in science communication, STEM education and mentorship, and I was
+recently an assistant professor at St. Olaf and Carleton Colleges. I hold a
+Ph.D and M.S. in physics from the University of Pittsburgh and a B.A. in
+physics and philosophy from Bowdoin College.
 
-I develop and build particle detectors, writing software to analyze intricate
-images of subatomic collisions -- all with the purpose of understanding what
-the universe is made of.
+
+# Research Summary
+
+My research activities span the field of experimental particle physics: I both
+build and operate particle detectors, and I model and analyze the images of
+particle collisions that they collect.
+
+![](images/minerva_photo.jpg){height=320px} ![](images/mu2e_tracker.jpg){height=320px}
+<figcaption>The MINERvA detector (left) and Mu2e tracker (right) are relatively
+small as particle detectors go.</figcaption>
+
+<break>
+<!--
+
+<center>
+![](images/minerva_photo.jpg){height=320px} ![](images/mu2e_tracker.jpg){height=320px}
+![](images/mu2e_lab.jpg){height=320px}
+</center>
+<figcaption>(Top) The MINERvA detector and Mu2e tracker are relatively small as particle detectors go. (Bottom) Mu2e detector construction in action.</figcaption>
+
+
+<center>
+![Image of a neutrino collision in the MINERvA detector](images/mu2e_lab.jpg){width=85% .external}
+</center>
+
+<break>
+-->
+
+The detectors my colleagues and I build are incredible projects -- completely
+custom-built, gymnasium-sized digital cameras that take pictures of particles
+and regularly set new human limits on energy, engineering, and technology. Our
+detectors can collect trillions of particle images. To extract the signals
+within, I also work in the areas of statistics, data science, computer science,
+machine learning, and high-performance computing.
+
+<center>
+![Image of a neutrino collision in the MINERvA detector](images/Target3DISEvent.jpg){width=85% .external}
+</center>
+
+My scientific focus is the Standard Model of particle physics -- an incredibly
+successful theory describing fundamental particles and the interactions
+between them. The Standard model seems to only make correct predictions, but
+can't explain some conspicuous phenomena like dark matter and gravity.
+According to the the Standard Model, there are 17 fundamental particles. I
+study two of them: neutrinos and muons.
+
+**Neutrinos** are extremely numerous, ghostly particles with a trace amount of
+mass. They're very hard to detect, and we still have a lot to learn about them.
+The big questions in neutrino physics are: what exactly is the neutrino's mass?
+How do neutrinos behave differently from their antiparticles? And might they
+even be their own antiparticles? Answering these questions will help us better
+understand the shortcomings of the Standard Model and help answer: why *this*
+universe?
+
+**Muons** are the heavier sister particles to electrons. The Mu2e experiment at
+Fermilab will search for a type of muon decay that is not allowed by the
+Standard Model, but that does happen in hypothetical *Beyond* Standard Model
+theories. The outcome of the Mu2e experiment will either be to wipe out whole
+categories of theories or pave the road to a new model.
+
+I focus specifically on neutrino beam technology and nuclear neutrino
+interactions. I work on several Fermilab experiments, in particular the MINERvA
+experiment, and I've also studied neutrino beams at CERN. On the Mu2e
+experiment I helped build the electron tracking detector, and now I develop
+machine learning-based calibration and analysis techniques. I also designed an
+[open science particle physics analysis software
+toolkit](https://www.epj-conferences.org/articles/epjconf/abs/2021/05/epjconf_chep2021_03046/epjconf_chep2021_03046.html)
+as a member of the MINERvA collaboration.
+
+<center>
+![](images/mu2e_lab.jpg){height=320px}
+<figcaption>The Mu2e detector under constrution at UMN circa 2022</figcaption>
+</center>
+
+# Teaching, Communication, and Community
+
+I also do work in physics education and community, with emphasis on a few areas
+where I found I can most effectively contribute to advancing DEAI in STEM:
+participation in advocacy groups, evidence-based teaching strategies,
+individual research mentorship, public science outreach, and
+open science.
+
+In 2022 and 2023, I was Adjunct Assistant Professor at [St. Olaf
+College](https://wp.stolaf.edu/physics/) teaching the advanced lab course, and
+Visiting Assistant Professor at [Carleton
+College](https://www.carleton.edu/physics-astronomy/), where I taught the intro
+physics survey course and researched neutrino detectors with a summer student.
+At Minnesota, I'm a member of the [Climate and Diversity
+Committee](https://sites.google.com/umn.edu/spa-cdc/home), I have many graduate
+and undergraduate student research partnerships, and this semester, I'm
+assisting/co-teaching Introduction to Nuclear and Particle Physics.
+
+<!--
+, These are the areas I've found where I
+can most effectively contribute to advancing DEAI in physics.
+
+These efforts reflect the areas where I’ve found I can most effectively
+contribute to advancing diversity, equity, and inclusion in STEM, particularly
+in supporting underrepresented groups.
+
+
+I do work in physics education and community focusing on issues of diversity,
+equity, and access in STEM. The things I focus on include:
+
+* Collaboration with and participation in advocacy groups
+* Teaching with evidence-based strategies
+* Individual student research partnerships and mentorship
+* Public outreach and scientific communication
+* Open science
+
+The areas I've found where I most effectively advance issues of diversity,
+equity, and access in STEM include:
+-->
+
+
+# Other Interests 
+
+I play lots of different sports like ice hockey, cross country skiing, rock
+climbing, and I captained my college rugby team. I'm a long time Lindy Hop
+swing dancer, community organizer, instructor, DJ, and competitor. I love to
+express myself and connect with others through dance. I enjoy strategy games,
+and analyzing games with statistics. I'm currently solving the collaborative
+card game, Hanabi, using reinforcement machine learning. My second academic
+love is the history and philosophy of physics -- in particular the questions of
+how scientific ideas develop and how they inform pedagogy.
+
+
+![](images/skiing.jpg){height=325px} ![](images/dancing.jpg){height=325px}
+<figcaption> Skiing in Wisconsin (left) and jamming in Pittsburgh (right).</figcaption>

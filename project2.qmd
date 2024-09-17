@@ -1,0 +1,52 @@
+---
+title: "Mu2e Tracker Construction Software"
+description: "Python-SQL data collection applications for the Mu2e tracker construction at UMN"
+image: images/pangui.png
+importance: 2
+categories: 
+  - work
+format: 
+  html:
+    toc: true
+---
+
+During the several years that our lab at UMN was building the Mu2e tracking
+detector, I developed and maintained several python apps to collect, manage,
+and analyze construction metadata, as well as guide our many student
+technicians through construction of a single detector module.
+
+We had to track tens of thousands of straws and many other components through
+every step. All the data was fed into a SQL database, and jupyter notebooks and
+pandas scripts analyzed the data for rapid problem solving and projcess
+improvements.
+
+Check it out on [GitHub](https://github.com/bamesserly/mu2e-tracker-factory).
+
+::: {.row}
+::: {.col-sm}
+![Example labbook frontend](images/pangui.png){.img-fluid .rounded .z-depth-1}
+
+:::
+:::
+
+::: {.row}
+::: {.col-sm}
+![Database-viewer app](images/DBV.png){.img-fluid .rounded .z-depth-1}
+
+:::
+:::
+
+::: {.row}
+::: {.col-sm}
+<!--![](images/leak_rate.png){.img-fluid .rounded .z-depth-1 width=80%} -->
+![Pandas-Jupyter QA-QC analysis of panel leak rates](images/leak_rate.png){.img-fluid .rounded .z-depth-1}
+
+:::
+:::
+
+::: {.row}
+::: {.col-sm}
+![Straw batch ID by panel was useful when tracking down leaks](images/straws.png){.img-fluid .rounded .z-depth-1}
+
+:::
+:::

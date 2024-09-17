@@ -1,0 +1,15 @@
+{
+  "hash": "93f0c0b72691db442dc30aafa006912a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Curriculum Vitae\"\nlayout: full\nexecute: \n  echo: false\n  message: false\n  warning: false\n---\n\n::: {.cell}\n\n:::\n\n\n<iframe src=\"https://nbviewer.org/github/bamesserly/ben-mess_quarto/blob/main/content/messerly_cv.pdf\" width=\"100%\" height=\"800\"></iframe>\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

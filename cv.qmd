@@ -1,0 +1,15 @@
+---
+title: "Curriculum Vitae"
+layout: full
+execute: 
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r setup}
+source("_common.R")
+```
+
+<iframe src="https://nbviewer.org/github/bamesserly/ben-mess_quarto/blob/main/content/messerly_cv.pdf" width="100%" height="800"></iframe>
+

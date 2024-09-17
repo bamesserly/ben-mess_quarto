@@ -1,0 +1,58 @@
+---
+title: "Quantitative History of Neutrino Detectors"
+description: "A Livingston historical survey of neutrino detector mass and position resolution"
+image: images/mass.png
+importance: 3
+categories: 
+  - work
+format: 
+  html:
+    toc: false
+---
+
+<center>
+![](images/mass.png){}
+<figcaption>History of neutrino detector mass.</figcaption>
+</center>
+
+<br>
+
+Inspired by the [famous plot](https://www.symmetrymagazine.org/article/october-2009/deconstruction-livingston-plot)
+ from M. Stanley Livingston showing accelerator center-of-mass energy as
+a function of time, our plots show the progressions of neutrino detector
+fiducial mass and interaction vertex resolution.
+
+The history and future of neutrino detectors is an exciting story for particle
+physicists designing and improving these detectors. We extracted and estimated
+two quantities characteristic of all neutrino detectors spanning back to the
+first neutrino observation. These two quantities – position resolution and
+detector mass – plotted on the log scale, tell a tale of technological growth,
+scientific priorities, and scientific mastery.
+
+Experiments did not always prioritize documenting or knowing these quantities,
+so we developed estimation methods to calculate these quantities. Spanning
+engineering, chemistry, and particle physics, these estimation techniques
+bolstered direct quotations and consistency checks. For more info on the
+dataset and our methodology, see our original presentation
+[here](https://indico.fnal.gov/event/13429/session/5/contribution/56/material/slides/0.pdf).
+
+<center>
+![](images/vertex_resolution.png){}
+<figcaption>History of neutrino detector position resolution.</figcaption>
+</center>
+
+<br>
+
+## What's the latest?
+
+This work is being prepared for early 2025 publication with student Adam
+Rothman (Carleton College, MN) and [Dr. Adam Lister](https://www.adam-lister.com/) (University of Wisconsin, Madison).
+
+This work began as a part of [the 2017 International Neutrino Summer School at Fermilab](https://indico.fnal.gov/event/13429/overview). Thanks to Professor Mark Messier for
+the idea and to original collaborators including Dr. Lister, [Dr. Shivesh Mandalia](https://shivesh.org/), James Ellison, and David Friant.
+
+Check it out on [github](https://github.com/admlw/neutrinoDetectorsPlot).
+
+<center>
+![](images/adam.jpg){}
+</center>

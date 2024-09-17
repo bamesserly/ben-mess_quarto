@@ -1,5 +1,6 @@
 ---
 title: "Ben Messerly"
+subtitle: "Physicist at the University of Minnesota"
 image: "images/messerly_profile.png"
 execute: 
   echo: false
@@ -7,6 +8,9 @@ execute:
   warning: false
 about:
   template: trestles
+  #template: jolla
+  image-shape: round
+  image-width: 10em
   links:
     - icon: linkedin
       href: https://www.linkedin.com/in/ben-messerly/
@@ -14,22 +18,38 @@ about:
       href: https://github.com/bamesserly
     - text: '<i class="ai ai-orcid fa-lg"></i>'
       href: https://orcid.org/0000-0002-1388-8737
+    - text: '<i class="fa fa-building-columns"></i>'
+      href: https://cse.umn.edu/physics/benjamin-messerly
+    - text: '<i class="ai ai-inspire fa-lg"></i>'
+      href: https://inspirehep.net/authors/1224691
 ---
 
 ```{r setup}
 source("_common.R")
 ```
 
-### Welcome to my personal website!
+:::{#hero-heading}
 
-My research is in high energy particle physics with focuses on both detector
-construction and data analysis.
+I'm an experimental nuclear and particle physicist at the [University of
+Minnesota](https://cse.umn.edu/physics). My work spans particle detector
+construction, data science, high-performance computing, machine learning, and
+education.
+
+I research the Standard Model theory of fundamental particle physics, and I
+conduct experiments that try prove it wrong.
+
+I also do work in science communication, STEM education and mentorship, and I
+was recently an assistant professor at [St.
+Olaf](https://wp.stolaf.edu/physics/) and
+[Carleton](https://www.carleton.edu/physics-astronomy/).
+
+:::
+
+<!--
 
 Some of my recent work includes building the electron tracking detector for the
 Mu2e experiment, designing and building a systematics software toolkit for
 general particle physics analyses, and measuring neutrino interactions at
 Fermilab.
 
-I'm interested undergraduate physics education, and I was recently a visiting
-professor at [St. Olaf](https://wp.stolaf.edu/physics/) and
-[Carleton](https://www.carleton.edu/physics-astronomy/).
+-->

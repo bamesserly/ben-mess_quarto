@@ -1,0 +1,124 @@
+---
+title: "MINERvA Analysis Toolkit"
+description: "Particle physics analysis toolkit"
+image: images/correlationMatrix_option1.png
+importance: 2
+categories: 
+  - work
+format: 
+  html:
+    toc: true
+---
+
+[GitHub](https://github.com/MinervaExpt/MAT) | [arxiv](https://arxiv.org/abs/2103.08677)
+
+<span style="font-size:18pt;"> The MAT is an error analysis software toolkit for particle physics data analysis that I designed and built as a member of the [MINERvA Experiment](https://minerva.fnal.gov/).
+</span>
+
+<span style="font-size:18pt;"> 
+The MAT is a flexible and powerful set of software tools to **centralize**, **calculate**, and **visualize** systematic uncertainties in particle physics analyses.
+</span>
+
+- Implemented in C++ and Python.
+- Experiment agnostic. Use tools à la carte or as a complete error analysis prescription.
+- Extensible and flexible for an arbitrary level of experiment and user customization.
+- Provides experiment-level control and standardization of systematics, interfaces, and calculations.
+- Transparent user interface to lower the barrier to entry for new analyzers.
+- The foundation for MINERvA's latest [results](https://minerva.fnal.gov/recent-minerva-results/) and our [data preservation project](https://arxiv.org/abs/2009.04548).
+
+## Data Visualization
+
+![](images/errorSummary.png){height=250px} ![](images/correlationMatrix_option1.png){height=250px}
+
+```cpp
+hist -> DrawErrorSummary(); // [left]
+errMatrix = hist -> GetCorrelationMatrix();
+errMatrix.Draw(); // [ right ]
+```
+
+Some of the data visualization tools provided by the MAT: error budget and total covariance matrix (above) and the source code (below).
+
+<br>
+
+## The `MnvHnD`, a powerful histogram container class
+
+![](images/mnvh1d_diagram.png){width=350px} ![](images/mnvh1d_add.png){width=350px}
+
+The `MnvHnD` container holds and manages universe information. Universes are propagated through histogram manipulations.
+
+<br>
+
+## Uncertainties processed in a single event record loop
+
+```cpp
+double PassesCuts(const ExampleUniverse& univ) {
+  return univ.GetLeptonEnergy() < 20;
+}
+
+MnvH1D energyHistogram(systematics);
+
+for(const auto& event: eventRecord) {
+  for(const ExampleUniverse& univ: systematics) {
+    if(PassesCuts(univ)) {
+      const double energy = univ.GetLeptonEnergy();
+      const double weight = univ.GetWeight();
+      energyHistogram.FillUniverse(univ, energy, weight);
+    }
+  }
+}
+```
+
+The central value and all systematics are processed in a single loop. Different universes may modify weights or impact the result of the cuts.
+
+<br>
+
+## Systematic `Universe` classes modularly implement many-universe error analysis
+
+![](images/univ_inheritance){}
+
+```cpp
+class ExampleUniverse: public BaseUniverse
+{
+  public:
+    //Constructor and destructor details...
+    
+    virtual double GetLeptonEnergy() const {
+      return m_tree->Get("lepton_energy");
+    }
+    
+    virtual double GetWeight() const {
+      return 1;
+    }
+    
+  private:
+    TreeWrapper* m_tree;
+};
+
+template <class UNIVERSE>
+class CalibrationLeptonEnergyUniverse: public UNIVERSE
+{
+  public:
+    //Constructors to match UNIVERSE
+
+    double GetLeptonEnergy() const override {
+      return UNIVERSE::GetLeptonEnergy() + 50; //MeV
+    }
+};
+```
+
+In the MAT namespace, experiments set experiment-wide constants, interfaces and systematics. Users and groups implement analysis-specific systematics and calculators. Here, the calibration process impacts the lepton energy, moving events in and out of the cuts when that universe is processed in the event loop.
+
+## Motivation
+
+>Uncertainty evaluation in HEP is complex and extremely important, but there are no community-standard tools.
+
+>Experiments are getting bigger, and flexible analysis systems are increasingly important for maximizing physics output.
+
+>The MAT lowers the software barrier to entry for analyzers allowing users to spend less time writing code and more time thinking about physics.
+
+<br>
+
+## Acknowledgments
+
+I designed and built the `Universe` system, upgraded the `MnvHnD` object to use `Universes` (I am not the original author of the `MnvHnD`), and was a principal developer of the toolkit as a whole (including most of its other unlisted bells and whistles), all on behalf of the MINERvA collaboration. I worked with several awesome MINERvA colleagues along the way, and now the toolkit is mostly maintained internally by MINERvAns.
+```

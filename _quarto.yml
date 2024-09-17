@@ -7,10 +7,14 @@ project:
   render:
     - "index.qmd"
     - "about.qmd"
+    - "projects.qmd"
+    - "cv.qmd"
+    - "project1.qmd"
+    - "project2.qmd"
+    - "project3.qmd"
+    - "project4.qmd"
     #- "lab.qmd"
-    #- "cv.qmd"
     #- "research.qmd"
-    #- "projects.qmd"
     #- "teaching.qmd"
     #- "talks/index.qmd"
     #- "talks/**/*.qmd"
@@ -27,12 +31,12 @@ project:
     - "static/"
 
 website:
-  title: "benmesserly.com"
+  title: "ben-mess.com"
   description: "The personal website of Ben Messerly"
   image: images/messerly_profile.png
-  site-url: https://www.benmesserly.com
+  site-url: https://www.ben-mess.com
   favicon: images/favicon/favicon.svg
-  #repo-url: https://github.com/bamesserly/benmesserly_quarto
+  repo-url: https://github.com/bamesserly/ben-mess_quarto
   search:
     location: navbar
     type: overlay
@@ -40,38 +44,44 @@ website:
   #google-analytics: "G-HQNG5WQE3X"
   open-graph:
     locale: es_ES
-    site-name: https://benmesserly.com
+    site-name: https://ben-mess.com
   navbar:
     right:
       - text: "About"
         href: about.qmd
-      - text: "Research"
-        href: research.qmd
-      - text: "Teaching"
-        href: teaching.qmd
+      #- text: "Research"
+      #  href: research.qmd
+      #- text: "Teaching"
+      #  href: teaching.qmd
       - text: "Projects"
         href: projects.qmd
+      - text: "CV"
+        href: cv.qmd
       #- text: "Talks"
       #  href: talks/index.qmd
       #- text: "Blog"
       #  href: blog/index.qmd
-      - icon: list
-        menu:
-          #- text: "CV"
-          #  href: cv.qmd
-          - icon: github
-            href: https://github.com/bamesserly
-            aria-label: GitHub
-            target: blank
-          - icon: linkedin
-            href: https://www.linkedin.com/in/ben-messerly/
-            target: blank
-          - text: "<i class='ai ai-orcid fa-lg'></i>"
-            href: https://orcid.org/0000-0002-1388-8737
-            target: blank
-          #- icon: rss-fill
-          #  href: blog.xml
-          #  target: blank
+      #- icon: list
+      #  menu:
+      #    #- text: "CV"
+      #    #  href: cv.qmd
+      #    - icon: github
+      #      href: https://github.com/bamesserly
+      #      aria-label: GitHub
+      #      target: blank
+      #    - icon: linkedin
+      #      href: https://www.linkedin.com/in/ben-messerly/
+      #      target: blank
+      #    - text: "<i class='ai ai-orcid fa-lg'></i>"
+      #      href: https://orcid.org/0000-0002-1388-8737
+      #      target: blank
+      #    - text: '<i class="fa fa-building-columns"></i>'
+      #      href: https://cse.umn.edu/physics/benjamin-messerly
+      #    - text: '<i class="ai ai-inspire fa-lg"></i>'
+      #      href: https://inspirehep.net/authors/1224691
+      #    #- icon: rss-fill
+      #    #  href: blog.xml
+      #    #  target: blank
   page-footer:
     center:
       - text: "© 2024 Ben Messerly<br>Site made with <a href='https://quarto.org/' target='_blank'><img src='https://quarto.org/favicon.png' width=12> quarto</a> and inspired by <a href='https://www.jhelvy.com/' target='_blank'>jhelvy</a>"
