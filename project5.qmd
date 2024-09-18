@@ -1,0 +1,85 @@
+---
+title: "Neutrino Beams"
+description: ""
+image: images/flux/beamXposition_dn1_meanpos.png
+importance: 3
+categories: 
+  - work
+format: 
+  html:
+    toc: false
+    html-math-method: katex
+---
+
+## How to Make a Neutrino Beam
+
+Though we've been making neutrino beams for decades, they're fundamentally
+difficult to control and monitor. Yet understanding them is critical to our
+experiments.
+
+The trouble is primarily that neutrinos have no electrical charge, so they're
+hard to manipulate, shape into beams, and monitor.
+
+The strategy to create a neutrino beam is to use a proton beam to create pions
+which naturally decay into neutrinos: $\pi \rightarrow \mu \rightarrow \nu_\mu$.
+
+Protons and pions are charged, so by steering those with magnets first, we have
+some control over neutrino direction and energy. Ideally, we'd have
+monoenergetic and highly collimated neutrino beams, but in practice that's not
+possible, and our beams are wideband.
+
+::: {layout-ncol=2}
+{{< video https://www.youtube.com/watch?v=U_xWDWKq1CM >}} 
+![](images/flux/fluxes3.png){}
+:::
+::: {style="margin-top: -20px;"}
+<center>
+<figcaption>
+(Left) How to build a neutrino beam in two minutes (with cartoons). (Right) Neutrino beams are built with different energy peaks and detector see different flux shapes depending on where they're placed.
+</figcaption>
+</center>
+:::
+<br>
+
+<center>
+![](images/poster_haley.jpg){width=49%} ![](images/poster_synnove.jpg){width=49%}
+<figcaption>REU students Haley Harms (UNI, IA) and Synnove Hunnes (Gustavus College, MN) developed beam monitor technology for the Short Baseline Neutrino Detector during Summer 2024.</figcaption>
+</center>
+<br>
+
+## Beam Simulation
+
+To help understand our beam and quantify our uncertaintes, we use detailed
+models of the entire beamline and the relevant physics processes.
+
+I've worked on many aspects of beam simulation and monitoring, but here I
+highlight how small asymmetries in the beamline apparatus can lead to
+complicated fluxes at your detector.
+
+::: {layout-nrow=2}
+![](images/flux/heat_04_05.png){width=24%}
+![](images/flux/heat_05_06.png){width=24%}
+![](images/flux/heat_06_07.png){width=24%}
+![](images/flux/heat_07_08.png){width=24%}
+![](images/flux/heat_08_10.png){width=24%}
+![](images/flux/heat_10_12.png){width=24%}
+![](images/flux/heat_12_14.png){width=24%}
+![](images/flux/heat_all.png){width=24%}
+:::
+::: {style="margin-top: -20px;"}
+<center>
+<figcaption>
+The neutrino heat map across the front face is very sensitive to neutrino
+energy. Lack of azimuthal symmetry is due to small asymmetries in the beam
+apparatus.
+</figcaption>
+</center>
+:::
+<br>
+
+<center>
+![](images/flux/beamXposition_dn1_meanpos.png){width=49%} ![](images/flux/numu_focusing_unc_absval.png){width=49%}
+<figcaption>(Left) Average neutrino position moves as a function of neutrino
+energy. And these positions are sensitive to small movements in the beam
+apparatus. (Right) The impact of beam apparatus uncertainties on the MINERvA
+flux model.[1](https://iopscience.iop.org/article/10.1088/1748-0221/16/08/P08068)</figcaption>

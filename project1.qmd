@@ -54,5 +54,5 @@ the idea and to original collaborators including Dr. Lister, [Dr. Shivesh Mandal
 Check it out on [github](https://github.com/admlw/neutrinoDetectorsPlot).
 
 <center>
-![](images/adam.jpg){}
+![](images/poster_adam.jpg){}
 </center>
