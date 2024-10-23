@@ -46,6 +46,6 @@ My analysis software looks at each of the millions of images, performs forensics
 
 ## What's new?
 
-- I wrote [my thesis](https://inspirehep.net/literature/1776914) on this topic, and now I'm preparing results with collaborator Everardo Granados (University of Guanajuato, MX) for late 2024 publication.
-- I spoke about pion production at the [European Physical Society Meeting](https://indico.desy.de/event/34916/contributions/147072/) in Hamburg, DE in August '23.
-- My codebase is public [here](https://github.com/MinervaExpt/CC-CH-pip-ana), and MINERvA is planning to release our data to the public in 2024.
+- I'm preparing results with collaborator Everardo Granados (University of Guanajuato, MX and Florida State University) for late 2024 publication. In this analysis we employ a new technique to measure pions down to zero kinetic energy.
+- I most recently spoke about pion production and the state of the cross section field in general at the [Neutrino Oscillation Workshop](https://agenda.infn.it/event/39753/contributions/241899/) in Otranto, IT in September '24.
+- I wrote [my thesis](https://inspirehep.net/literature/1776914) on this topic.

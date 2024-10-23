@@ -92,7 +92,7 @@ format:
     theme: [default, css/theme.scss]
     anchor-sections: true
     smooth-scroll: true
-    link-external-newwindow: true
+    link-external-newwindow: false
     link-external-icon: false
     # This is to include fontawesome and academic icons in the headers:
     include-in-header: "_includes/header.html"

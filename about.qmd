@@ -66,7 +66,7 @@ My scientific focus is the Standard Model of particle physics -- an incredibly
 successful theory describing fundamental particles and the interactions
 between them. The Standard model seems to only make correct predictions, but
 can't explain some conspicuous phenomena like dark matter and gravity.
-According to the the Standard Model, there are 17 fundamental particles. I
+According to the Standard Model, there are 17 fundamental particles. I
 study two of them: neutrinos and muons.
 
 **Neutrinos** are extremely numerous, ghostly particles with a trace amount of
