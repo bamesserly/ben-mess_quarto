@@ -1,6 +1,6 @@
 ---
 title: "Ben Messerly"
-subtitle: "Physicist at the University of Minnesota"
+#subtitle: "Physicist at the University of Minnesota"
 image: "images/messerly_profile.jpeg"
 execute: 
   echo: false
@@ -30,18 +30,18 @@ source("_common.R")
 
 :::{#hero-heading}
 
-I'm an experimental nuclear and particle physicist at the [University of
-Minnesota](https://cse.umn.edu/physics). My work spans particle detector
-construction, data science, high-performance computing, machine learning, and
-education.
+I'm a machine learning engineer at [SDG](https://www.solutiondesign.com/),
+building everything from cloud infrastructure to data pipelines to LLM agents.
 
-I research the Standard Model theory of fundamental particle physics, and I
-conduct experiments that try to prove it wrong.
+I have a PhD in nuclear and particle physics. At Fermilab and the University of
+Minnesota, I built and operated particle detectors to collect trillions of
+images of particle collisions. I led technical teams, maintained production
+software, and developed neural networks to learn about the fundamental quantum
+nature of our universe.
 
-I also do work in science communication, STEM education and mentorship, and I
-was recently an assistant professor at [St.
-Olaf](https://wp.stolaf.edu/physics/) and
-[Carleton](https://www.carleton.edu/physics-astronomy/).
+I have 10+ years of experience in technical mentorship and teaching across
+physics, software, data science, and ML. I place strong emphasis on clear and
+accessible technical communication.
 
 :::
 
